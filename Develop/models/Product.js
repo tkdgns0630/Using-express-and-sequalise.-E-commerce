@@ -15,22 +15,21 @@ Product.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    product_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
-      type: DataTypes.STRING,
+    price: {
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
-      unique: true,
       validate: {
-        isEmail: true,
+        isDecimal: true,
       },
     },
     category_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "reader",
+        model: "category",
         key: "id",
       },
     },

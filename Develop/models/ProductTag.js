@@ -12,27 +12,18 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    trip_budget: {
-      type: DataTypes.DECIMAL(10, 2),
-      allowNull: true,
-    },
-    traveller_amount: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue: 1,
-    },
-    traveller_id: {
+    product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "traveller",
+        model: "product",
         key: "id",
         unique: false,
       },
     },
-    location_id: {
+    tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "location",
+        model: "tag",
         key: "id",
         unique: false,
       },

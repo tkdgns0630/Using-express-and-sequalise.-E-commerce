@@ -4,36 +4,37 @@ const Category = require("./Category");
 const Tag = require("./Tag");
 const ProductTag = require("./ProductTag");
 
-// Products belongsTo Category
-LibraryCard.belongsTo(Reader, {
-  foreignKey: "reader_id",
-});
 // Categories have many Products
-Reader.hasMany(Book, {
-  foreignKey: 'reader_id',
-  onDelete: 'CASCADE',
+Category.hasMany(Product, {
+  foreignKey: "category_id",
+  onDelete: "CASCADE",
+});
+
+// Products belongsTo Category
+Product.belongsTo(Category, {
+  foreignKey: "category_id",
 });
 
 // Products belongToMany Tags (through ProductTag)
-Traveller.belongsToMany(Location, {
+Product.belongsToMany(Tag, {
   // Define the third table needed to store the foreign keys
   through: {
-    model: Trip,
+    model: ProductTag,
     unique: false,
   },
   // Define an alias for when data is retrieved
-  as: "planned_trips",
+  as: "product_Tag",
 });
 // Tags belongToMany Products (through ProductTag)
 
-Location.belongsToMany(Traveller, {
+Tag.belongsToMany(Product, {
   // Define the third table needed to store the foreign keys
   through: {
-    model: Trip,
+    model: ProductTag,
     unique: false,
   },
   // Define an alias for when data is retrieved
-  as: "location_travellers",
+  as: "tag_product",
 });
 
 module.exports = {

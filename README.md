@@ -26,5 +26,7 @@ Open source
 
 # IMPORTANT 
 # Video Link
-chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/8c3f434f-9370-45ca-yd63-017ec7e3a4df![Insomnia 22_08_2023 09_09_36](https://github.com/tkdgns0630/Employee-Tracker/assets/129707996/8a870312-ed23-4d9d-8c26-d644e4fe68e2)
+chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/8c3f434f-9370-45ca-yd63-017ec7e3a4df
+
+(https://github.com/tkdgns0630/Employee-Tracker/assets/129707996/8a870312-ed23-4d9d-8c26-d644e4fe68e2)
 

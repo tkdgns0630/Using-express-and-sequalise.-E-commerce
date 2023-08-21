@@ -28,5 +28,5 @@ Open source
 # Video Link
 [chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/8c3f434f-9370-45ca-yd63-017ec7e3a4df](https://drive.google.com/file/d/1krQI4N9AWETrLxwzgoPrzxt49hzWZV4W/view)
 
-(https://github.com/tkdgns0630/Employee-Tracker/assets/129707996/8a870312-ed23-4d9d-8c26-d644e4fe68e2)
 
+![Insomnia 22_08_2023 09_32_08](https://github.com/tkdgns0630/Using-express-and-sequalise.-E-commerce/assets/129707996/07d11c1e-d967-4772-b938-f4ea5757d681)

@@ -26,7 +26,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const onePro = await Product.findByPk(req.params.id, {
-      include: [Category, { model: Tag, through: ProductTag }],
+      include: [{ model: Category, model: Tag, through: ProductTag }],
     });
     res.status(200).json(onePro);
   } catch (err) {
@@ -102,6 +102,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
+//delete a product
 router.delete("/:id", async (req, res) => {
   try {
     const proDel = await Product.destroy({
